@@ -22,6 +22,13 @@ We have received reports from our user said that their WeChat account has been d
 
 1. [昨天用了一下最新版的docker镜像立马微信就被封了 #55](https://github.com/huan/docker-wechat/issues/55)
 
+## Changes from upstream
+
+Compared with upstream, this fork:
+
+1. Support running on NVidia GPU
+2. Build with latest WeChat version
+
 ## Usage ![Powered Linux](https://img.shields.io/badge/WeChat-Linux-brightgreen)
 
 WeChat PC will be started on your Linux desktop by running the following one-line command:
@@ -190,13 +197,13 @@ For example: the `zixia/wechat:0.2` may be the same image as the `zixia/wechat:2
 
 Install Gnome Extension: [Top Icons Plus Git](https://extensions.gnome.org/extension/2311/topicons-plus/) by bijignome
 
-> Note 1: there's almost half dozen of the `TopIcons` extensions with very similar name: TopIcons, TopIcons Redux, TopIcons Plus, **TopIcons Plus Git**, TopIconsFix. Use **TopIcons Plus Git**, it's the right one.  
+> Note 1: there's almost half dozen of the `TopIcons` extensions with very similar name: TopIcons, TopIcons Redux, TopIcons Plus, **TopIcons Plus Git**, TopIconsFix. Use **TopIcons Plus Git**, it's the right one.
 >
 > Note 2: The `TopIcons Plus` has the bug that cause the `wine` itself shows a window on your desktop. ([#19](https://github.com/huan/docker-wechat/issues/19))
 
 ### Exit with code 5 on openSUSE Leap
 
-When you encounter problem that the app exit with code 5  on openSUSE Leap, you need to disable X server access control to allow any user to connect to the X server before you start the app. Use below command to disable it:  
+When you encounter problem that the app exit with code 5  on openSUSE Leap, you need to disable X server access control to allow any user to connect to the X server before you start the app. Use below command to disable it:
 
 `$ xhost +`
 
